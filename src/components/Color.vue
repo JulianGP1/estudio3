@@ -19,6 +19,8 @@ function add(){
     }
 
 }
+const color=ref("green")
+
 </script>
 
 
@@ -29,6 +31,8 @@ function add(){
         <span v-show="number > 0" class="float-right mt-5 font-bold text-xl bg-blue-500 py-2 px-4 rounded ">time: {{time}}</span>
         <h4 v-if="number == 0" class="mt-5 font-semibold bg-yellow-200 px-2 rounded" >CLICKEAR? O MIEDO 🐔</h4>
         <h4 v-if="number > 0" class="mt-5 font-semibold bg-cyan-200 px-2 rounded" >GO! 🐢 </h4>
-    </div>
-  
-</template> 
+        <input type="text" v-model="color">
+        <p>{{color}}</p>
+        </div>
+    
+    </template> 
